@@ -1,6 +1,7 @@
 const animals = ["giraffes", "elephants", "horses", "pigs", "turkeys"];
 
 function displayGifs() {
+    $(`#images`).empty();
     let animal = $(this).attr("data-name");
 
 
