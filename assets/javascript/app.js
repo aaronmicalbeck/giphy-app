@@ -6,7 +6,7 @@ function displayGifs() {
 
     const apiKey = "MoXWPXC3Ih0aybP4vBhlR0xQfMGdCJcX";
 
-    const queryUrl = "https://api.giphy.com/v1/gifs/search?api_key=" + apiKey + "&q=" + animal + "&limit=5&offset=0&rating=PG&lang=en";
+    const queryUrl = "https://api.giphy.com/v1/gifs/search?api_key=" + apiKey + "&q=" + animal + "&limit=10&offset=0&rating=PG&lang=en";
 
     $.ajax({
         url: queryUrl,
