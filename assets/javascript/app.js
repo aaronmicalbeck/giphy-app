@@ -24,7 +24,7 @@ function displayGifs() {
             image.attr("data-animated", animated);
             image.attr("data-state", "still");
             image.addClass("gif");
-            $("#images").append(image, p);
+            $("#images").prepend(image, p);
         }
 
     })
