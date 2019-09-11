@@ -51,7 +51,7 @@ function displayGifs() {
         // console.log(res.data);
         for (let i = 0; i < res.data.length; i++) {
             let rating = res.data[i].rating;
-            let p = $("<p>").text(`Rating: ${rating}`);
+            let p1 = $("<p>").text(`Rating: ${rating}`);
             let animated = res.data[i].images.fixed_height.url;
             let still = res.data[i].images.fixed_height_still.url;
             let image = $("<img>");
@@ -61,7 +61,7 @@ function displayGifs() {
             image.attr("data-animated", animated);
             image.attr("data-state", "still");
             image.addClass("gif");
-            $("#images").prepend(image, p);
+            $("#images").prepend(image, p1);
         }
 
     })
